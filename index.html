@@ -13,6 +13,8 @@
             background-color: #f4f4f4;
         }
 
+
+
         .closet {
             width: 200px;
             border: 1px solid #ccc;
@@ -21,6 +23,46 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             float: left;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .closet {
+                background-color: #333;
+            }
+
+            input,
+            [contenteditable="true"] {
+                color: #fff;
+                background-color: #555;
+                border: 1px solid #444;
+            }
+
+            .button {
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            .plus {
+                background-color: #4CAF50;
+                /* Green */
+            }
+
+            .minus {
+                background-color: #e74c3c;
+                /* Red */
+            }
+
+            .addItemButton {
+                background-color: #3498db;
+                /* Blue */
+            }
         }
 
         .item {
@@ -33,7 +75,6 @@
         .itemName {
             font-weight: bold;
             color: #333;
-            /* Text color */
         }
 
         .quantity {
@@ -44,15 +85,13 @@
         input,
         [contenteditable="true"] {
             width: 60px;
-            /* Adjusted width for contenteditable */
             height: 30px;
             text-align: center;
             border: 1px solid #ddd;
-            /* Border color */
             border-radius: 5px;
-            /* Border radius */
             margin-right: 10px;
-            /* Space between input and buttons */
+            color: #333;
+            background-color: #fff;
         }
 
         .button {
@@ -61,36 +100,27 @@
             padding: 10px;
             border-radius: 5px;
             font-weight: bold;
-            /* Increased font weight */
         }
 
         .plus {
             background-color: #2ecc71;
-            /* Green color */
             color: #fff;
-            /* Text color */
         }
 
         .minus {
             background-color: #e74c3c;
-            /* Red color */
             color: #fff;
-            /* Text color */
         }
 
         .addItemButton {
             background-color: #3498db;
-            /* Blue color */
             color: #fff;
-            /* Text color */
             border: none;
             padding: 12px;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 15px;
-            /* Space between items and button */
             font-weight: bold;
-            /* Increased font weight */
         }
     </style>
 </head>
